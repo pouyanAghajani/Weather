@@ -1,0 +1,69 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "@app/*": ["./app/*"],
+      /* Modules paths */
+      "@department": ["./modules/department/index.ts"],
+      "@department/*": ["./modules/department/*"],
+      /* data paths */
+      "@data/config": ["./data/config/index.ts"],
+      "@data/constants": ["./data/constants/index.ts"],
+      "@data/content": ["./data/content/index.ts"],
+      "@data/errors": ["./data/errors/index.ts"],
+      "@data/initial": ["./data/initial/index.ts"],
+      "@data/messages": ["./data/messages/index.ts"],
+      /* Libs paths */
+      "@libs/assets/*": ["./libs/assets/*"],
+      "@libs/clients": ["./libs/clients/index.ts"],
+      "@libs/clients/*": ["./libs/clients/*"],
+      "@libs/components": ["./libs/components/index.ts"],
+      "@libs/components/*": ["./libs/components/*"],
+      "@libs/contexts": ["./libs/contexts/index.ts"],
+      "@libs/contexts/*": ["./libs/contexts/*"],
+      "@libs/design": ["./libs/design/index.ts"],
+      "@libs/design/*": ["./libs/design/*"],
+      "@libs/guards": ["./libs/guards/index.ts"],
+      "@libs/guards/*": ["./libs/guards/*"],
+      "@libs/hooks": ["./libs/hooks/index.ts"],
+      "@libs/hooks/*": ["./libs/hooks/*"],
+      "@libs/layouts": ["./libs/layouts/index.ts"],
+      "@libs/layouts/*": ["./libs/layouts/*"],
+      "@libs/services": ["./libs/services/index.ts"],
+      "@libs/services/*": ["./libs/services/*"],
+      "@libs/storages": ["./libs/storages/index.ts"],
+      "@libs/storages/*": ["./libs/storages/*"],
+      "@libs/utils/*": ["./libs/utils/*"],
+      "@libs/utils": ["./libs/utils/index.ts"],
+      "@libs/handlers": ["./libs/handlers/index.ts"],
+      "@libs/handlers/*": ["./libs/handlers/*"],
+      /* Routes paths */
+      "@routes": ["./routes/index.ts"],
+      "@routes/*": ["./routes/*"],
+      /* Types paths */
+      "@types": ["./types/index.ts"],
+      "@dto": ["./types/dto/index.ts"],
+      "@enums": ["./enums/index.ts"]
+    }
+  },
+  "include": ["src", "app", "data", "libs", "modules", "types", "routes"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
