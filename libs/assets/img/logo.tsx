@@ -1,12 +1,14 @@
+import logo from './logo.png';
+
 const Logo: React.FC = () => {
   return (
     <div className="flex items-center space-x-2">
       <img
-        src="./img/logo.png"
+        src={logo}
         alt="Logo"
-        className="inline-block size-10 object-cover"
+        className="mt-2 inline-block size-20 object-cover"
       />
-      <h1 className="text-2xl font-bold">WeatherApp</h1>
+      <h1 className="text-3xl font-bold">WeatherApp</h1>
     </div>
   );
 };

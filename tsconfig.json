@@ -46,7 +46,7 @@
       "@libs/guards/*": ["./libs/guards/*"],
       "@libs/hooks": ["./libs/hooks/index.ts"],
       "@libs/hooks/*": ["./libs/hooks/*"],
-      "@libs/layouts": ["./libs/components/index.ts"],
+      "@libs/layouts": ["./libs/layouts/index.ts"],
       "@libs/layouts/*": ["./libs/layouts/*"],
       "@libs/services": ["./libs/services/index.ts"],
       "@libs/services/*": ["./libs/services/*"],

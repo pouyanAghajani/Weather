@@ -5,15 +5,15 @@ const SosialMedia: React.FC = () => {
   return (
     <div className="flex items-center space-x-4">
       <a href="https://facebook.com" target="_blank" rel="noreferrer">
-        <FaFacebook className="hover:text-gray-300" />
+        <FaFacebook className="size-10 hover:text-gray-300" />
       </a>
       <a href="https://twitter.com" target="_blank" rel="noreferrer">
-        <FaTwitter className="hover:text-gray-300" />
+        <FaTwitter className="size-10 hover:text-gray-300" />
       </a>
       <a href="https://instagram.com" target="_blank" rel="noreferrer">
-        <FaInstagram className="hover:text-gray-300" />
+        <FaInstagram className="size-10 hover:text-gray-300" />
       </a>
-      <BiUserCircle className="hover:text-gray-300" />
+      <BiUserCircle className="size-10 hover:text-gray-300" />
     </div>
   );
 };

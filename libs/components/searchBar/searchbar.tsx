@@ -6,10 +6,10 @@ const Searchbar: React.FC = () => {
       <input
         type="text"
         placeholder="جستجوی مکان"
-        className="rounded-lg border-2 border-white bg-blue-500 px-3 py-1 text-white focus:outline-none"
+        className="rounded-lg border-2 border-white bg-blue-500 px-3 py-1 text-white placeholder:text-white focus:outline-none "
       />
       <button>
-        <FaSearch />
+        <FaSearch className="size-5" />
       </button>
     </div>
   );
