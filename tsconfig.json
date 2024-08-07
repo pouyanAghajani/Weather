@@ -32,6 +32,7 @@
       "@data/initial": ["./data/initial/index.ts"],
       "@data/messages": ["./data/messages/index.ts"],
       /* Libs paths */
+      "@libs/assets": ["./libs/assets/index.ts"],
       "@libs/assets/*": ["./libs/assets/*"],
       "@libs/clients": ["./libs/clients/index.ts"],
       "@libs/clients/*": ["./libs/clients/*"],
@@ -45,7 +46,7 @@
       "@libs/guards/*": ["./libs/guards/*"],
       "@libs/hooks": ["./libs/hooks/index.ts"],
       "@libs/hooks/*": ["./libs/hooks/*"],
-      "@libs/layouts": ["./libs/layouts/index.ts"],
+      "@libs/layouts": ["./libs/components/index.ts"],
       "@libs/layouts/*": ["./libs/layouts/*"],
       "@libs/services": ["./libs/services/index.ts"],
       "@libs/services/*": ["./libs/services/*"],
@@ -64,6 +65,15 @@
       "@enums": ["./enums/index.ts"]
     }
   },
-  "include": ["src", "app", "data", "libs", "modules", "types", "routes"],
+  "include": [
+    "src",
+    "app",
+    "data",
+    "libs",
+    "modules",
+    "types",
+    "routes",
+    "libs/assets"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
