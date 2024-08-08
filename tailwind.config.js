@@ -6,7 +6,17 @@ export default {
     './libs/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'xs': '480px',
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1050px',
+        'xl': '1300px',
+        '2xl': '1550px',
+        'custom': '900px',
+      },
+    },
   },
   plugins: [],
 };

@@ -6,7 +6,7 @@ const Logo: React.FC = () => {
       <img
         src={logo}
         alt="Logo"
-        className="mt-2 inline-block size-20 object-cover"
+        className="mt-1 inline-block size-20 object-cover"
       />
       <h1 className="text-3xl font-bold">WeatherApp</h1>
     </div>

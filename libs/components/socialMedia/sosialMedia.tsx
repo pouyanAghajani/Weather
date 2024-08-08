@@ -3,7 +3,7 @@ import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 
 const SosialMedia: React.FC = () => {
   return (
-    <div className="flex items-center space-x-4">
+    <div className="hidden items-center space-x-4 xl:flex">
       <a href="https://facebook.com" target="_blank" rel="noreferrer">
         <FaFacebook className="size-10 hover:text-gray-300" />
       </a>
