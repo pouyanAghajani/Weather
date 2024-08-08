@@ -1,9 +1,9 @@
-import { Header } from '@libs/layouts';
+import Rout from '@routes';
 import { useEffect } from 'react';
 
 const App = () => {
   useEffect(() => {
-    const Api: string = import.meta.env.API_KEY;
+    const Api: string = import.meta.env.VITE_API_KEY;
     fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=tehran&appid=${Api}`,
     )
@@ -13,7 +13,7 @@ const App = () => {
   }, []);
   return (
     <div>
-      <Header />
+      <Rout />
     </div>
   );
 };
