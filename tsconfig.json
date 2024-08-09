@@ -56,6 +56,8 @@
       "@libs/utils": ["./libs/utils/index.ts"],
       "@libs/handlers": ["./libs/handlers/index.ts"],
       "@libs/handlers/*": ["./libs/handlers/*"],
+      "@libs/pages": ["./libs/pages/index.ts"],
+      "@libs/pages/*": ["./libs/pages/*"],
       /* Routes paths */
       "@routes": ["./routes/index.ts"],
       "@routes/*": ["./routes/*"],

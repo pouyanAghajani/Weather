@@ -1,36 +1,38 @@
+import { Link } from 'react-router-dom';
+
 const Nav: React.FC = () => {
   return (
     <nav className="hidden space-x-4 text-2xl font-semibold lg:flex">
-      <a
-        href="/"
+      <Link
+        to="/"
         className="flex h-24 w-28 items-center justify-center  bg-blue-500 hover:bg-blue-800"
       >
         Home
-      </a>
-      <a
-        href="/forecast"
+      </Link>
+      <Link
+        to="/Forecast"
         className="flex h-24 w-28 items-center justify-center bg-blue-500  hover:bg-blue-800"
       >
         Forecast
-      </a>
-      <a
-        href="/alerts"
+      </Link>
+      <Link
+        to="/Alerts"
         className="flex h-24 w-28 items-center justify-center bg-blue-500  hover:bg-blue-800"
       >
         Alerts
-      </a>
-      <a
-        href="/news"
+      </Link>
+      <Link
+        to="/News"
         className="flex h-24 w-28 items-center justify-center bg-blue-500  hover:bg-blue-800"
       >
         News
-      </a>
-      <a
-        href="/about"
+      </Link>
+      <Link
+        to="/Aboutus"
         className="flex h-24 w-28 items-center justify-center bg-blue-500  hover:bg-blue-800"
       >
         About Us
-      </a>
+      </Link>
     </nav>
   );
 };
