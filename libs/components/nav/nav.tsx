@@ -5,31 +5,31 @@ const Nav: React.FC = () => {
         href="/"
         className="flex h-24 w-28 items-center justify-center  bg-blue-500 hover:bg-blue-800"
       >
-        خانه
+        Home
       </a>
       <a
         href="/forecast"
         className="flex h-24 w-28 items-center justify-center bg-blue-500  hover:bg-blue-800"
       >
-        پیش‌بینی
+        Forecast
       </a>
       <a
         href="/alerts"
         className="flex h-24 w-28 items-center justify-center bg-blue-500  hover:bg-blue-800"
       >
-        هشدارها
+        Alerts
       </a>
       <a
         href="/news"
         className="flex h-24 w-28 items-center justify-center bg-blue-500  hover:bg-blue-800"
       >
-        اخبار
+        News
       </a>
       <a
         href="/about"
         className="flex h-24 w-28 items-center justify-center bg-blue-500  hover:bg-blue-800"
       >
-        درباره‌ما
+        About Us
       </a>
     </nav>
   );

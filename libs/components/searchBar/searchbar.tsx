@@ -5,8 +5,8 @@ const Searchbar: React.FC = () => {
     <div className="hidden items-center space-x-2 2xl:flex">
       <input
         type="text"
-        placeholder="جستجوی مکان"
-        className="rounded-lg border-2 border-white bg-blue-500 px-3 py-1 text-white placeholder:text-white focus:bg-blue-800 focus:outline-none"
+        placeholder="Location Search"
+        className="rounded-lg border-2 border-white bg-blue-500 px-3 py-1 pt-2 text-white placeholder:text-white focus:bg-blue-800 focus:outline-none"
       />
       <button>
         <FaSearch className="size-5" />
