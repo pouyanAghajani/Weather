@@ -3,6 +3,7 @@ export default interface WeatherDetails {
   country: string;
   clouds: number;
   date: string;
+  id: number;
   temp: number;
   feelsLike: number;
   tempMin: number;
