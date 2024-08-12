@@ -21,7 +21,6 @@ const coordinates = async (
     const list: WeatherData[] = data.list;
     const arr: WeatherDetails[] = [];
     console.log(data);
-    console.log(list);
     list.map((_, index) => {
       const firstItem: WeatherData = list[index];
       const clouds = firstItem.clouds.all;

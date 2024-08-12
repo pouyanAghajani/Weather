@@ -1,10 +1,21 @@
-import type { ReactNode } from 'react';
+import { Card } from '@libs/components';
+import coordinates from '@libs/services/coordinates';
+import type { WeatherDetails } from '@types';
+import { useEffect, useState } from 'react';
 
-interface myprop {
-  children?: ReactNode;
-}
+const Home: React.FC = () => {
+  const [datas, setData] = useState<WeatherDetails[] | undefined>(undefined);
 
-const Home: React.FC<myprop> = ({ children }) => {
-  return <div>{children}</div>;
+  useEffect(() => {
+    void coordinates('tehran').then(res => setData(res));
+  }, []);
+
+  return (
+    <div className=" flex flex-wrap items-center justify-center gap-2">
+      {datas?.map((data, index) => {
+        return <Card data={data} key={data.id} />;
+      })}
+    </div>
+  );
 };
 export default Home;
