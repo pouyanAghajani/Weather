@@ -1,7 +1,6 @@
+import imgfoo from '@libs/assets/image/imgfoo.webp';
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
-
-import imgfoo from '../../assets/image/imgfoo.webp';
-import imgfoocenter from '../../assets/image/imgfoocenter.webp';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   return (
@@ -10,11 +9,24 @@ const Footer: React.FC = () => {
         <div className=" flex flex-col items-center pl-2">
           <div>Phone : +77 217 8850</div>
           <div>Email : weatherNews7000@email.com</div>
-          <div>About Us</div>
-          <div>Contact Us</div>
-          <div>Privacy Policy</div>
-          <div>Terms of Use</div>
-          <div>FAQ - Frequently Asked Questions</div>
+          <Link to="/Aboutus" className="hover:cursor-pointer hover:underline">
+            About Us
+          </Link>
+          <Link
+            to="/ContactUs"
+            className="hover:cursor-pointer hover:underline"
+          >
+            Contact Us
+          </Link>
+          <Link to="/Privacy" className="hover:cursor-pointer hover:underline">
+            Privacy Policy
+          </Link>
+          <Link to="/Terms" className="hover:cursor-pointer hover:underline">
+            Terms of Use
+          </Link>
+          <Link to="/faq" className="hover:cursor-pointer hover:underline">
+            FAQ - Frequently Asked Questions
+          </Link>
           <div className="flex gap-8">
             <div>
               <a href="https://facebook.com" target="_blank" rel="noreferrer">

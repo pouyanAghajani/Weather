@@ -1,9 +1,9 @@
-import lgsea from '../../assets/image/lgsea.webp';
-import mdsea from '../../assets/image/mdsea.webp';
-import sea from '../../assets/image/sea.png';
-import smsea from '../../assets/image/smsea.webp';
-import xlsea from '../../assets/image/xlsea.webp';
-import xssea from '../../assets/image/xssea.webp';
+import lgsea from '@libs/assets/image/lgsea.webp';
+import mdsea from '@libs/assets/image/mdsea.webp';
+import sea from '@libs/assets/image/sea.png';
+import smsea from '@libs/assets/image/smsea.webp';
+import xlsea from '@libs/assets/image/xlsea.webp';
+import xssea from '@libs/assets/image/xssea.webp';
 
 const Baner: React.FC = () => {
   return (
