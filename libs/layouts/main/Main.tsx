@@ -1,3 +1,4 @@
+import { NotFound } from '@data/errors';
 import { Card } from '@libs/components';
 import coordinates from '@libs/services/coordinates';
 import type { WeatherDetails } from '@types';
@@ -12,16 +13,14 @@ const Main: React.FC = () => {
     void coordinates(city).then(res => setData(res));
   }, [city]);
 
-  return (
+  return datas ? (
     <div className=" flex flex-wrap items-center justify-center gap-2">
-      {datas ? (
-        datas?.map((data, index) => {
-          return <Card data={data} key={data.id} />;
-        })
-      ) : (
-        <div>Error</div>
-      )}
+      {datas.map((data, index) => {
+        return <Card data={data} key={data.id} />;
+      })}
     </div>
+  ) : (
+    <NotFound />
   );
 };
 export default Main;
