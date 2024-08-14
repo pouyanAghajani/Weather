@@ -20,7 +20,6 @@ const coordinates = async (
     const country = data.city.country;
     const list: WeatherData[] = data.list;
     const arr: WeatherDetails[] = [];
-    console.log(data);
     list.map((_, index) => {
       const firstItem: WeatherData = list[index];
       const clouds = firstItem.clouds.all;
