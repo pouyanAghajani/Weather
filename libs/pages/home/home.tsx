@@ -11,8 +11,8 @@ const Home: React.FC = () => {
   }, []);
 
   return (
-    <div className=" flex flex-wrap items-center justify-center gap-2">
-      {datas?.map((data, index) => {
+    <div className=" flex flex-wrap items-center justify-center gap-2 py-10">
+      {datas?.map(data => {
         return <Card data={data} key={data.id} />;
       })}
     </div>

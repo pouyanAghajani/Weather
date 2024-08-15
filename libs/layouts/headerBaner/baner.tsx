@@ -4,10 +4,12 @@ import sea from '@libs/assets/image/sea.png';
 import smsea from '@libs/assets/image/smsea.webp';
 import xlsea from '@libs/assets/image/xlsea.webp';
 import xssea from '@libs/assets/image/xssea.webp';
+import Clock from '@libs/components/clock';
 
 const Baner: React.FC = () => {
   return (
     <>
+      <Clock />
       <img src={sea} alt="Error" className="hidden w-full 2xl:block" />
       <img
         src={xlsea}
